@@ -15,11 +15,12 @@ try {
    const response = await cloudinary.uploader.upload(localFilePath,{
         resource_type:"auto"
    } );
-   console.log("file uploaded on cloudinary",response.url);
-   return {
-    url: response.secure_url,
-    public_id: response.public_id
-   }
+  // console.log("file uploaded on cloudinary",response.url);
+  fs.unlinkSync(localFilePath); 
+  return {
+     url: response.secure_url,
+     public_id: response.public_id
+    }
       } catch (error) {
       if (localFilePath) fs.unlinkSync(localFilePath);
     console.error("Upload failed details:", error); // Full error log

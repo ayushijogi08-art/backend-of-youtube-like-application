@@ -10,7 +10,7 @@ const userSchema = new Schema({
     fullName: {type: String, required: true, trim: true,index: true},
     subscribersCount: {type: Number, default: 0},
     avatar: {type: String, required: true},
-    coverImage: {type: String, required: true},
+    coverImage: {type: String, default: ""},
     watchHistory:[
         {
             type: Schema.Types.ObjectId,
