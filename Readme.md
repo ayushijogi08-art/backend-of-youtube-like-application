@@ -38,6 +38,28 @@ npm install
 npm run dev
 ```
 
+## 🔑 Environment Variables
+
+This project uses environment variables for configuration.  
+Create a `.env` file in the root directory and add the following:
+
+```env
+PORT=5000
+NODE_ENV=development
+
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/dbname
+
+ACCESS_TOKEN_SECRET=your_access_token_secret
+ACCESS_TOKEN_EXPIRY=15m
+
+REFRESH_TOKEN_SECRET=your_refresh_token_secret
+REFRESH_TOKEN_EXPIRY=7d
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+```
+
 
 ## 📂 Project Structure
 
