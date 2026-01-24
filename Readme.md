@@ -27,16 +27,25 @@ Supports user authentication, video uploads, likes, comments, channels, subscrip
 - **Storage:** Cloudinary
 - **Tools:** Postman, GitHub
 
+
+## ⚙️ Setup & Run Locally
+
+```bash
+git clone https://github.com/ayushijogi08-art/video_streaming_platform_backend.git
+cd video_streaming_platform_backend
+npm install
+npm run dev
+
 ---
 
 ## 📂 Project Structure
 
-VIDEO_STREAMING_PLATFORM_BACKEND\SRC
-│   app.js
-│   constants.js
-│   index.js
+SRC/
+│  app.js # Express app configuration
+├── index.js # Server entry point
+├── constants.js # Application-wide constants
 │   
-├───controllers
+├───controllers/ # Request handling & business logic
 │       admin.controller.js
 │       comment.controller.js
 │       dashboard.controller.js
@@ -50,16 +59,16 @@ VIDEO_STREAMING_PLATFORM_BACKEND\SRC
 │       user.controller.js
 │       video.controller.js
 │
-├───db
+├───db/ # Database connection
 │       index.js
 │
-├───middlewares
+├───middlewares/ # Custom middleware
 │       auth.middleware.js
 │       error.middleware.js
 │       multer.middleware.js
 │       verifyJWT.js
 │
-├───models
+├───models/ # MongoDB schemas
 │       comment.model.js
 │       like.model.js
 │       playlist.model.js
@@ -68,7 +77,7 @@ VIDEO_STREAMING_PLATFORM_BACKEND\SRC
 │       user.model.js
 │       video.model.js
 │
-├───routes
+├───routes/ # API route definitions
 │       admin.routes.js
 │       comment.routes.js
 │       dashboard.routes.js
@@ -82,7 +91,7 @@ VIDEO_STREAMING_PLATFORM_BACKEND\SRC
 │       user.routes.js
 │       video.routes.js
 │
-└───utils
+└───utils/ # Utility helpers
         ApiError.js
         ApiResponse.js
         asyncHandler.js
