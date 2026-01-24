@@ -36,9 +36,14 @@ cd video_streaming_platform_backend
 npm install
 npm run dev
 
+
 ---
 
+
+
+```md
 ## 📂 Project Structure
+
 
 SRC/
 │  app.js # Express app configuration
@@ -96,5 +101,15 @@ SRC/
         ApiResponse.js
         asyncHandler.js
         cloudinary.js
+
+
+
+## 🧪 API Testing
+
+All APIs were tested using Postman.
+JWT-protected routes require the Authorization header.
+
+Postman collection is available in the `/postman` directory.
+
 
 
