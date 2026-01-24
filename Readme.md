@@ -40,9 +40,6 @@ npm run dev
 
 ## 🔑 Environment Variables
 
-This project uses environment variables for configuration.  
-Create a `.env` file in the root directory and add the following:
-
 ```env
 PORT=5000
 NODE_ENV=development
@@ -69,10 +66,10 @@ index.js
 constants.js 
 
 controllers/ 
-| ├─ admin.controller.js
-| ├─ comment.controller.js
-| ├─ dashboard.controller.js
-| ├─ healthcheck.controller.js
+│ ├─ admin.controller.js
+│ ├─ comment.controller.js
+│ ├─ dashboard.controller.js
+│ ├─ healthcheck.controller.js
 │ ├─ like.controller.js
 │ ├─ passwordReset.controller.js
 │ ├─ playlist.controller.js
