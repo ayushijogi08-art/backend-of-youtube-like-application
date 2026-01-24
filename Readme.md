@@ -169,8 +169,7 @@ This project uses **JWT-based authentication** with **Access Tokens** and **Refr
   "message": "User registered successfully"
 }
 
-###Login User
-
+Login User
 POST /api/users/login
 
 Response
@@ -188,12 +187,12 @@ Response
 
 POST /api/videos/upload
 
-##Headers
+###Headers
 
 Authorization: Bearer <access_token>
 
 
-##Response
+###Response
 
 {
   "success": true,
