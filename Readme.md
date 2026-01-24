@@ -31,3 +31,61 @@ Supports user authentication, video uploads, likes, comments, channels, subscrip
 
 ## 📂 Project Structure
 
+VIDEO_STREAMING_PLATFORM_BACKEND\SRC
+│   app.js
+│   constants.js
+│   index.js
+│   
+├───controllers
+│       admin.controller.js
+│       comment.controller.js
+│       dashboard.controller.js
+│       healthcheck.controller.js
+│       like.controller.js
+│       passwordReset.controller.js
+│       playlist.controller.js
+│       search.controller.js
+│       subscription.controller.js
+│       tweet.controller.js
+│       user.controller.js
+│       video.controller.js
+│
+├───db
+│       index.js
+│
+├───middlewares
+│       auth.middleware.js
+│       error.middleware.js
+│       multer.middleware.js
+│       verifyJWT.js
+│
+├───models
+│       comment.model.js
+│       like.model.js
+│       playlist.model.js
+│       subcription.model.js
+│       tweet.model.js
+│       user.model.js
+│       video.model.js
+│
+├───routes
+│       admin.routes.js
+│       comment.routes.js
+│       dashboard.routes.js
+│       healthcheck.routes.js
+│       like.routes.js
+│       passwordReset.routes.js
+│       playlist.routes.js
+│       search.routes.js
+│       subscription.routes.js
+│       tweet.routes.js
+│       user.routes.js
+│       video.routes.js
+│
+└───utils
+        ApiError.js
+        ApiResponse.js
+        asyncHandler.js
+        cloudinary.js
+
+
